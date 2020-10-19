@@ -1,0 +1,59 @@
+.mat-toolbar{
+    height: 100px;
+    background: #74a436;
+    /*box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.mat-grid-list{
+    width: 100%;
+}
+
+#phone{
+    margin: auto;
+}
+
+#phone img{
+    float: left;
+    margin: auto;
+    width: 45px;
+}
+
+#phone p{
+    font-size: 150%;
+    font-weight: bold;
+    color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(35px, -50%);
+}
+
+#social-media{
+    color: black;
+    margin: auto;
+}
+
+#social-media p{
+    font-size: 100%;
+    font-weight: bold;
+    color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20px, -50%);
+}
+
+#fb-logo{
+    width: 30px;
+}
+
+#insta-logo{
+    width: 32px;
+}
+
+
+/*
+kuva-teksti divit ei oo keskellä
+*/

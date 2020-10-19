@@ -1,0 +1,13 @@
+<mat-grid-list cols="6" class="gallery">
+  <mat-grid-tile colspan="1" *ngFor="let image of images; index as i; let l = count" class="img-tile">
+    <div class="small-overlay" (mouseleave) ="mouseLeave(i)" (click)="openClick(i)"><img src="../../assets/images/zoom-icon.png" class="zoom-icon"/></div>
+    <img src="{{image.url}}" class="small-img" (mouseenter)="mouseEnter(i, l)"/>
+  </mat-grid-tile>
+</mat-grid-list>
+<div class="big-overlay">
+  <img src="" class="big-img"/>
+  <img src="../../assets/images/close.png" class="close-icon" (click)="closeClick()">
+  <img src="../../assets/images/arrow.png" class="prev-icon" (click)="prevClick()">
+  <img src="../../assets/images/arrow.png" class="next-icon" (click)="nextClick()">
+</div>
+

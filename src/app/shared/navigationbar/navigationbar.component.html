@@ -1,0 +1,37 @@
+<mat-toolbar color="secondary">
+    <div >
+      <a routerLink="/">
+        <img src="../../assets/images/woodboss_logo2.png" id="logo">
+      </a>
+    </div>
+
+    <mat-nav-list >
+ 
+      <mat-list-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+          <h2 id="yri">YRITYS</h2>
+      </mat-list-item>
+
+      <!--<mat-divider [vertical]="true"></mat-divider>-->
+
+      <mat-list-item routerLink="/palvelut" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+          <h2>PALVELUT</h2>
+      </mat-list-item>
+
+      <!--<mat-divider [vertical]="true"></mat-divider>-->
+
+      <mat-list-item routerLink="/yhteystiedot" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+          <h2>YHTEYSTIEDOT</h2>
+      </mat-list-item>
+
+      <!--<mat-divider [vertical]="true"></mat-divider>-->
+
+      <mat-list-item routerLink="/galleria" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+        true}">
+          <h2>GALLERIA</h2>
+      </mat-list-item>
+
+    </mat-nav-list>
+</mat-toolbar>
