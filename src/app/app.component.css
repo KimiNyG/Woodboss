@@ -21,6 +21,7 @@ body {
   z-index: 1;
   width: 100%;
   background: #0d0a0b;
+  background-image: linear-gradient(#0d0a0b, #18191d);
   /*background: #212121;
   background-image: url("../assets/images/blurBack2.png");
   background-repeat: no-repeat;
@@ -30,6 +31,7 @@ body {
   align-items: center;*/
   margin-top: auto;
   flex: 1;
+  text-shadow: 1px 1px #000000;
 }
 
 /*.overlay {
@@ -85,6 +87,10 @@ mat-sidenav {
 
   .outer-div {
     margin-top: 65px;
+  }
+
+  .footer {
+    height: 300px;
   }
 }
 

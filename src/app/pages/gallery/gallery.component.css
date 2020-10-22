@@ -1,4 +1,4 @@
-.gallery {
+/*.gallery {
   width: 60vw;
   flex-wrap: wrap;
 }
@@ -6,24 +6,52 @@
 .img-tile {
   width: 100%;
   z-index: 1;
+}*/
+
+.content-container {
+  width: 100%;
+  margin: 15px auto 15px auto;
+}
+
+.gallery-div {
+  margin: auto;
+  box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+  max-width: 80%;
+}
+
+.img-div {
+  overflow: hidden;
+  margin: 2px;
+  position: relative;
+}
+
+.img-div img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .small-overlay {
   visibility: hidden;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0, 0.7);
-  z-index: 2;
-  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   justify-content: center;
   align-items: center;
+  background: rgb(0, 0, 0, 0.8);
+  z-index: 2;
+  display: flex;
 }
 
 .zoom-icon {
-  width: 50px;
-  height: 50px;
+  display: flex;
   opacity: 40%;
+  max-height: 50%;
+  max-width: 50%;
 }
 
 .close-icon {
@@ -34,13 +62,13 @@
   height: 50px;
 }
 
-.small-img {
+/*.small-img {
   visibility: visible;
   position: relative;
   padding: 1px;
   height: 100%;
   z-index: 1;
-}
+}*/
 
 .big-overlay {
   visibility: hidden;
@@ -83,8 +111,7 @@
 
 @media only screen and (max-width: 500px) {
   /* For mobile phones: */
-  .gallery {
-    width: 90vw;
-    flex-wrap: wrap;
+  .gallery-div {
+    max-width: 90%;
   }
 }

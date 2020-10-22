@@ -1,8 +1,6 @@
 .mat-toolbar {
   width: 100%;
   height: 65px;
-  /*background: #333333;
-  background: #454955;*/
   background: #202122;
 }
 
@@ -28,7 +26,6 @@
   width: 250px;
   position: relative;
   display: flex;
-  margin: auto;
 }
 
 #logo {
@@ -49,11 +46,18 @@
   font-family: "Roboto";
 }
 
-@media only screen and (max-width: 500px) {
-  /* For mobile phones: */
+@media screen and (max-width: 1050px) {
   #navLogo {
+    width: 250px;
+  }
+
+  #navList {
     width: 100%;
   }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
 }
 
 @font-face {

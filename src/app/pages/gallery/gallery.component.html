@@ -1,4 +1,20 @@
-<mat-grid-list [cols]="breakpoint" class="gallery" (window:resize)="onResize($event)">
+<div class="content-container">
+  <div class="gallery-div" fxLayout="row wrap">
+      <div *ngFor="let image of images; index as i; let l = count" class="img-div" fxFlex.gt-md="0 0 calc(16.6%-4px)" fxFlex.gt-sm="0 0 calc(25%-4px)" fxFlex="0 0 calc(50%-4px)" >
+        <img src="{{image.url}}" class="small-img" (mouseenter)="mouseEnter(i, l)"/>
+        <div class="small-overlay" (mouseleave) ="mouseLeave(i)" (click)="openClick(i)"><img src="../../assets/images/zoom-icon.png" class="zoom-icon"/></div>
+      </div>
+  </div>
+</div>
+
+<div class="big-overlay">
+  <img src="" class="big-img"/>
+  <img src="../../assets/images/close.png" class="close-icon" (click)="closeClick()">
+  <img src="../../assets/images/arrow.png" class="prev-icon" (click)="prevClick()">
+  <img src="../../assets/images/arrow.png" class="next-icon" (click)="nextClick()">
+</div>
+
+<!--<mat-grid-list [cols]="breakpoint" class="gallery" (window:resize)="onResize($event)">
   <mat-grid-tile colspan="1" *ngFor="let image of images; index as i; let l = count" class="img-tile">
     <div class="small-overlay" (mouseleave) ="mouseLeave(i)" (click)="openClick(i)"><img src="../../assets/images/zoom-icon.png" class="zoom-icon"/></div>
     <img src="{{image.url}}" class="small-img" (mouseenter)="mouseEnter(i, l)"/>
@@ -9,5 +25,5 @@
   <img src="../../assets/images/close.png" class="close-icon" (click)="closeClick()">
   <img src="../../assets/images/arrow.png" class="prev-icon" (click)="prevClick()">
   <img src="../../assets/images/arrow.png" class="next-icon" (click)="nextClick()">
-</div>
+</div>-->
 

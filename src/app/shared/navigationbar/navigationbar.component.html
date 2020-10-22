@@ -1,5 +1,5 @@
-<mat-toolbar color="secondary">
-  <div fxHide.gt-xs>
+<mat-toolbar>
+  <div fxHide.gt-sm>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
@@ -11,7 +11,7 @@
       </a>
     </div>
 
-    <div fxHide.xs id="navList">
+    <div fxHide fxShow.gt-sm id="navList">
       <mat-nav-list >
    
         <mat-list-item routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
@@ -19,21 +19,15 @@
             <h2 id="yri">YRITYS</h2>
         </mat-list-item>
   
-        <!--<mat-divider [vertical]="true"></mat-divider>-->
-  
         <mat-list-item routerLink="/palvelut" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
           true}">
             <h2>PALVELUT</h2>
         </mat-list-item>
   
-        <!--<mat-divider [vertical]="true"></mat-divider>-->
-  
         <mat-list-item routerLink="/yhteystiedot" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
           true}">
             <h2>YHTEYSTIEDOT</h2>
         </mat-list-item>
-  
-        <!--<mat-divider [vertical]="true"></mat-divider>-->
   
         <mat-list-item routerLink="/galleria" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
           true}">

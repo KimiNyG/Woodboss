@@ -1,4 +1,4 @@
-#services-grid {
+/*#services-grid {
   width: 100vw;
 }
 
@@ -27,6 +27,28 @@ div p {
   transform: translate(-50%, -50%);
   box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.5),
     0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+.content-div {
+  margin: 15px;
+  box-sizing: border-box;
+  flex-direction: row;
+  display: flex;
+}
+
+.contact-div {
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  max-width: 80%;
+  text-align: left;
+}
+
+.form-div h2 {
+  text-align: center;
 }
 
 .example-form {
@@ -38,6 +60,10 @@ div p {
 .email-field,
 .msg-field {
   width: 100%;
+}
+
+button {
+  background-color: #202122;
 }
 
 ::ng-deep .mat-focused .mat-form-field-label {
