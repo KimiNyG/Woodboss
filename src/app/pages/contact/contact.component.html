@@ -1,0 +1,47 @@
+<mat-grid-list [cols]="breakpoint" [rowHeight]="breakpoint2" id="services-grid" (window:resize)="onResize($event)">
+  <mat-grid-tile colspan="1">
+    <div id="contact-div">
+      <h2>Yhteystiedot</h2>
+      <br>
+      <p>Metsäpalvelu Woodboss Ky</p>
+      <p>Y-tunnus: 2650791-8</p><br>
+      <p>Aholantie 196</p>
+      <p>17410 Viitaila</p><br>
+      <p>050 4664122</p>
+      <p>niko.lehtinen@phnet.fi</p>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1">
+    <div id="form-div">
+      <h2>Ota yhteyttä</h2>
+      <br>
+      <div class="form-container">
+        <mat-form-field appearance="outline">
+          <mat-label>Koko nimi</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="email-field">
+          <mat-label>Sähköposti</mat-label>
+          <input matInput [formControl]="emailFormControl" placeholder="Esim. esim@esimerkki.fi">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Syötä oikea sähköpostiosoite
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Sähköposti <strong>vaaditaan</strong>
+          </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+          <mat-label>Puhelinnumero</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline" class="msg-field">
+          <mat-label>Viesti</mat-label>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <button mat-raised-button>Lähetä</button>
+      </div>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

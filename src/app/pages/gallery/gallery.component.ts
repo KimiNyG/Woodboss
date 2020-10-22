@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 
 
@@ -74,6 +73,7 @@ export class GalleryComponent implements OnInit {
   ];
 
   imageIndex = 0;
+  breakpoint;
   count;
 
   mouseEnter(i : number, count :number){
@@ -124,9 +124,17 @@ prevClick(){
   img[0].setAttribute("src",this.images[this.imageIndex].url);
 }
 
+onResize(event) {
+  this.breakpoint = (event.target.innerWidth <= 800) ? 2 : 6;
+}
+
   constructor() { }
 
   ngOnInit() {
+    this.breakpoint = (window.innerWidth <= 800) ? 2:6;
   }
+
+  
+
 
 }

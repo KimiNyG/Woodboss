@@ -1,59 +1,94 @@
-.mat-toolbar{
-    height: 100px;
-    background: #74a436;
-    /*box-shadow: 0px 20px 20px 20px rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+.mat-toolbar {
+  height: 100px;
+  /*background: #74a436;*/
+  background-color: #3f7d20;
+  color: #0d0a0b;
 }
 
-.mat-grid-list{
-    width: 100%;
+.mat-grid-list {
+  width: 100%;
 }
 
-#phone{
-    margin: auto;
+.mat-grid-tile {
+  justify-content: center;
 }
 
-#phone img{
-    float: left;
-    margin: auto;
-    width: 45px;
+#phone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
-#phone p{
-    font-size: 150%;
-    font-weight: bold;
-    color: black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(35px, -50%);
+#phone img {
+  width: 45px;
 }
 
-#social-media{
-    color: black;
-    margin: auto;
+#phone p {
+  position: relative;
+  margin: auto;
+  font-size: 150%;
+  font-weight: bold;
 }
 
-#social-media p{
-    font-size: 100%;
-    font-weight: bold;
-    color: black;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(20px, -50%);
+#ig,
+#fb {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 150px;
 }
 
-#fb-logo{
-    width: 30px;
+#ig p,
+#fb p {
+  position: relative;
+  margin: auto;
+  font-size: 100%;
+  font-weight: bold;
+  color: #0d0a0b;
+  font-family: "Roboto";
 }
 
-#insta-logo{
-    width: 32px;
+a:hover {
+  text-decoration: none;
 }
 
+#fb-logo {
+  position: relative;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+}
 
-/*
-kuva-teksti divit ei oo keskellä
-*/
+#insta-logo {
+  position: relative;
+  margin: auto;
+  width: 32px;
+  height: 32px;
+}
+
+#leftShadow,
+#rightShadow {
+  opacity: 0.8;
+}
+
+#leftShadow {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .mat-toolbar {
+    height: 200px;
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(../../../assets/fonts/Roboto-Regular.ttf) format("truetype");
+}

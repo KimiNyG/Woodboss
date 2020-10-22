@@ -1,87 +1,90 @@
-.gallery{
-    width: 60vw;
+.gallery {
+  width: 60vw;
+  flex-wrap: wrap;
+}
+
+.img-tile {
+  width: 100%;
+  z-index: 1;
+}
+
+.small-overlay {
+  visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-icon {
+  width: 50px;
+  height: 50px;
+  opacity: 40%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 85px;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+.small-img {
+  visibility: visible;
+  position: relative;
+  padding: 1px;
+  height: 100%;
+  z-index: 1;
+}
+
+.big-overlay {
+  visibility: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.7);
+  z-index: 4;
+}
+
+.big-img {
+  display: flex;
+  margin: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.next-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 5%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+}
+
+.prev-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 5%;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .gallery {
+    width: 90vw;
     flex-wrap: wrap;
+  }
 }
-
-.img-tile{
-    width: 100%;
-    z-index: 1;
-}
-
-.small-overlay{
-    visibility: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgb(0, 0, 0, 0.7);
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.zoom-icon{
-   width: 50px;
-   height: 50px;
-   opacity: 40%;
-}
-
-.close-icon{
-    position: absolute;
-    top: 85px;
-    right: 150px;
-    width: 50px;
-    height: 50px;
-}
-
-.small-img{
-    visibility: visible;
-    position: relative;
-    padding: 1px;
-    height: 100%;
-    z-index: 1;
-}
-
-.big-overlay{
-    visibility: hidden;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgb(0, 0, 0, 0.7);
-    z-index: 4;
-}
-
-.big-img{
-    display: flex;
-    margin:auto;
-    max-width: 80vw;
-    max-height: 80vh;
-}
-
-.next-icon{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    right: 150px;
-    top: 50%;
-    -ms-transform: translateY(-50%)
-}
-
-.prev-icon{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 150px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: rotate(180deg)
-}
-
-
-
-
-

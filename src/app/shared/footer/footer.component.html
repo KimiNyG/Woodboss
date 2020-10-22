@@ -1,5 +1,16 @@
-<mat-toolbar color="secondary" id="footer-body">
-  <mat-grid-list cols="2" rowHeight="100px">
+<mat-toolbar id="footer-body">
+  <mat-grid-list [cols]="breakpoint" rowHeight="100px" (window:resize)="onResize($event)">
+    
+    <mat-grid-tile colspan="1" >
+      <div>
+        <p>YTHEYSTIEDOT</p>
+      </div>   
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <img src="../../../assets/images/shadow.png" id="leftShadow" fxHide fxShow.gt-sm/>
+    </mat-grid-tile>
+
     <mat-grid-tile colspan="1" >
       <div id="phone">
         <img src="../../../assets/images/phone.png"/>
@@ -7,19 +18,27 @@
       </div>   
     </mat-grid-tile>
 
-    <mat-grid-tile colspan="1" id="social-media">
+    <mat-grid-tile>
+      <img src="../../../assets/images/shadow.png" id="rightShadow" fxHide fxShow.gt-sm/>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="1">
       <mat-grid-list cols="1" rowHeight="50px">
         <mat-grid-tile colspan="1" >
           <a href="https://www.facebook.com/Mets%C3%A4palvelu-WoodBoss-Ky-895049920506009">
-            <img src="../../../assets/images/face.png" id="fb-logo"/>
-            <p>facebook</p>
-          </a>   
+            <div id="fb" >
+                <img src="../../../assets/images/face.png" id="fb-logo"/>
+                <p>facebook</p> 
+            </div>
+          </a>
         </mat-grid-tile>
         <mat-grid-tile colspan="1" >
           <a href="instagram.com">
-            <img src="../../../assets/images/insta.png" id="insta-logo"/>
-            <p>instagram</p>
-          </a>   
+          <div id="ig">
+              <img src="../../../assets/images/insta.png" id="insta-logo"/>
+              <p>instagram</p>
+          </div>
+          </a>
         </mat-grid-tile>
       </mat-grid-list>
     </mat-grid-tile>

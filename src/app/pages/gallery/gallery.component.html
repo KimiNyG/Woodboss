@@ -1,4 +1,4 @@
-<mat-grid-list cols="6" class="gallery">
+<mat-grid-list [cols]="breakpoint" class="gallery" (window:resize)="onResize($event)">
   <mat-grid-tile colspan="1" *ngFor="let image of images; index as i; let l = count" class="img-tile">
     <div class="small-overlay" (mouseleave) ="mouseLeave(i)" (click)="openClick(i)"><img src="../../assets/images/zoom-icon.png" class="zoom-icon"/></div>
     <img src="{{image.url}}" class="small-img" (mouseenter)="mouseEnter(i, l)"/>

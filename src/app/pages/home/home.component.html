@@ -1,24 +1,55 @@
-<mat-grid-list cols="2" rowHeight="2:1" id="home-grid">
-  <div class="logo">
-    <img src="../../assets/images/woodboss_logo2.png" id="toolbar-title" routerLink="/"/>
+<div class="logo-class">
+  <img src="../../assets/images/woodboss_logo3.png" id="bigLogo"/>
+</div>
+
+<div class="spacer"></div>
+
+<div class="content-container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+  <div fxHide fxShow.gt-sm class="trees" fxFlex="25" >
+    <img src="../../../assets/images/vasen123.png" id="vasen123">
   </div>
-  <mat-grid-tile colspan="1">
-    <div id="content-div">
-      <p>
+  <div class="content-div" fxFlex="50" fxFlex.gt-sm="25">
+    <p>
       Metsäpalvelu WoodBoss Ky tarjoaa kattavat ja laadukkaat 
       metsänhoitopalvelut Lahden seudulla. 
       Oleellinen osa metsänhoidossa on puunkaadot ja taimikonhoito, 
       joihin me olemme erikoistuneita. Toimintaamme kuuluu myös 
-      polttopuun myynti sekä luotettavat puutavarakuljetukset. 
-  
+      polttopuun myynti sekä luotettavat puutavarakuljetukset.
+
       Toteutamme metsänhoitotyöt asiakkaan toiveiden mukaan sille 
       sovitussa aikataulussa. Asiakas voi luottaa siihen, että metsässä 
       toimitaan metsänhoidon suositusten mukaisesti ja luonnonarvot 
       huomioiden. Nykyaikainen, toimiva metsäkonekalusto sekä työvälineet 
       takaavat työllemme laadukkaan lopputuloksen.
-      </p>
-
-    </div>
+    </p>
+  </div>
+  <div class="img-div" fxFlex="50" fxFlex.gt-sm="25">
+    <img src="../../../assets/images/mestari.jpg">
+  </div>
+  <div fxHide fxShow.gt-sm class="trees" fxFlex="25">
+    <img src="../../../assets/images/oikea123.png" id="oikea123">
+  </div>
+</div>
+<!--<mat-grid-list [cols]="breakpoint" [rowHeight]="breakpoint2" id="home-grid" (window:resize)="onResize($event)">
+  <mat-grid-tile colspan="1" fxHide fxShow.gt-sm>
+    <img src="../../../assets/images/vasen123.png" id="vasen123">
+  </mat-grid-tile>
+  <mat-grid-tile colspan="1" id="content-tile">
+      <div id="content-div">
+        <p>
+        Metsäpalvelu WoodBoss Ky tarjoaa kattavat ja laadukkaat 
+        metsänhoitopalvelut Lahden seudulla. 
+        Oleellinen osa metsänhoidossa on puunkaadot ja taimikonhoito, 
+        joihin me olemme erikoistuneita. Toimintaamme kuuluu myös 
+        polttopuun myynti sekä luotettavat puutavarakuljetukset. 
+    
+        Toteutamme metsänhoitotyöt asiakkaan toiveiden mukaan sille 
+        sovitussa aikataulussa. Asiakas voi luottaa siihen, että metsässä 
+        toimitaan metsänhoidon suositusten mukaisesti ja luonnonarvot 
+        huomioiden. Nykyaikainen, toimiva metsäkonekalusto sekä työvälineet 
+        takaavat työllemme laadukkaan lopputuloksen.
+        </p>
+      </div>
   </mat-grid-tile>
 
   <mat-grid-tile colspan="1">
@@ -28,5 +59,7 @@
     </div>
     
   </mat-grid-tile>
-
-</mat-grid-list>
+  <mat-grid-tile colspan="1" fxHide fxShow.gt-sm>
+    <img src="../../../assets/images/oikea123.png" id="oikea123" >
+  </mat-grid-tile>
+</mat-grid-list>-->
