@@ -30,7 +30,6 @@ body {
   align-items: center;*/
   margin-top: auto;
   flex: 1 0 auto;
-  flex-shrink: 1;
   text-shadow: 1px 1px #000000;
 }
 
