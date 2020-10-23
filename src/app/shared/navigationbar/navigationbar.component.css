@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 1050px) {
   #navLogo {
-    width: 250px;
+    width: 100%;
     background-color: aqua;
   }
 
