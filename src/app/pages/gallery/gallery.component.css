@@ -1,13 +1,3 @@
-/*.gallery {
-  width: 60vw;
-  flex-wrap: wrap;
-}
-
-.img-tile {
-  width: 100%;
-  z-index: 1;
-}*/
-
 .content-container {
   width: 100%;
   margin: 15px auto 15px auto;
@@ -61,14 +51,6 @@
   width: 50px;
   height: 50px;
 }
-
-/*.small-img {
-  visibility: visible;
-  position: relative;
-  padding: 1px;
-  height: 100%;
-  z-index: 1;
-}*/
 
 .big-overlay {
   visibility: hidden;

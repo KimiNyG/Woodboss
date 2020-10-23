@@ -1,34 +1,3 @@
-/*#services-grid {
-  width: 100vw;
-}
-
-div h2 {
-  margin: auto;
-  text-align: center;
-}
-
-div p {
-  margin: auto;
-  text-align: justify;
-}
-
-#content-div,
-#form-div {
-  max-width: 90%;
-}
-
-#img-div img {
-  width: 45%;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.5),
-    0 8px 8px 0 rgba(0, 0, 0, 0.19);
-}*/
-
 .content-div {
   margin: 15px;
   box-sizing: border-box;

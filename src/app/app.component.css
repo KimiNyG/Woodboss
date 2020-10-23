@@ -10,7 +10,7 @@ body {
 
 .nav {
   width: 100%;
-  flex: 1;
+  flex: 0 1;
   z-index: 2;
   box-shadow: 0px 15px 25px 10px rgba(0, 0, 0, 0.6),
     0 5px 5px 0 rgba(0, 0, 0, 0.19);
@@ -21,30 +21,15 @@ body {
   width: 100%;
   background: #0d0a0b;
   background-image: linear-gradient(#0d0a0b, #18191d);
-  /*background: #212121;
-  background-image: url("../assets/images/blurBack2.png");
-  background-repeat: no-repeat;
-  background-size: 100vw;*/
   display: flex;
-  /*justify-content: center;
-  align-items: center;*/
   margin-top: auto;
   flex: 1 0 auto;
   text-shadow: 1px 1px #000000;
 }
 
-/*.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0);
-}*/
-
 .main-content {
   width: 100%;
   height: 100%;
-  /*margin-top: 15px;
-  margin-bottom: 15px;*/
   justify-content: center;
   font-family: "Roboto";
 }
@@ -100,8 +85,6 @@ mat-sidenav {
     url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
 
-/* KORJATTAVAA 
-- footeriin yhteystiedot?
-- responsiivisuus
+/* KORJATTAVAA / LISTÄTTÄVÄÄ
 - hover -"animaatiot" + muut animaatiot
 */
