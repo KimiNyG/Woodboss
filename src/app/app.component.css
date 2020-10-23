@@ -51,8 +51,9 @@ body {
 }
 
 .footer {
+  position: relative;
   margin-top: auto;
-  z-index: 2;
+  z-index: 1;
   height: 100px;
   width: 100%;
   background-color: #3f7d20;

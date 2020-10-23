@@ -48,12 +48,12 @@
 
 @media screen and (max-width: 1050px) {
   #navLogo {
-    width: 100%;
     height: 100%;
   }
 
   #navLogo a {
     height: 100%;
+    justify-content: center;
   }
 
   #navList {
