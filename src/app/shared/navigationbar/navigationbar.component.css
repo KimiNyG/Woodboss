@@ -49,6 +49,18 @@
 @media screen and (max-width: 1050px) {
   #navLogo {
     width: 250px;
+    background-color: aqua;
+  }
+
+  #navLogo a {
+    background-color: blue;
+    opacity: 0.5;
+  }
+
+  #navLogo a img {
+    width: 250px;
+    background-color: blueviolet;
+    opacity: 0.5;
   }
 
   #navList {
