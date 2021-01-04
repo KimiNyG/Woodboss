@@ -1,5 +1,5 @@
 .content-div {
-  margin: 15px;
+  margin-top: 65px;
   box-sizing: border-box;
   flex-direction: row;
   display: flex;
@@ -7,7 +7,13 @@
 
 .contact-div {
   width: 100%;
+  margin-top: 15px;
   text-align: center;
+}
+
+.form-div {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .form {
@@ -63,6 +69,3 @@ button {
   height: 0;
 }
 
-#mat-dialog-0 {
-  padding: 50px;
-}

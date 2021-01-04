@@ -9,6 +9,7 @@ body {
 }
 
 .nav {
+  position: absolute;
   width: 100%;
   flex: 0 1;
   z-index: 2;
@@ -17,6 +18,7 @@ body {
 }
 
 .outer-div {
+  position: relative;
   z-index: 1;
   width: 100%;
   background: #0d0a0b;
@@ -68,10 +70,6 @@ mat-sidenav {
 
   .nav {
     position: fixed;
-  }
-
-  .outer-div {
-    margin-top: 65px;
   }
 
   .footer {

@@ -1,5 +1,6 @@
 .content-div {
-  margin: 15px;
+  margin-top: 65px;
+  margin-bottom: 15px;
   box-sizing: border-box;
   flex-direction: row;
   display: flex;
@@ -7,7 +8,8 @@
 }
 
 .services-div {
-  width: 100%;
+  max-width: 90%;
+  margin-top: 15px;
 }
 
 .services-div h2 {
@@ -22,18 +24,18 @@
 }
 
 .img-div {
+  margin-top: 15px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  margin-bottom: 15px;
   justify-content: center;
   text-align: center;
 }
 
 .img-div img {
   margin: auto;
-  max-height: 60%;
-  max-width: 60%;
+  max-height: 400px;
+  max-width: 90%;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.15),
     0 8px 8px 0 rgba(0, 0, 0, 0.15);
