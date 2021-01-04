@@ -31,6 +31,10 @@
   width: 100%;
 }
 
+textarea {
+  min-height: 127px;
+}
+
 button {
   background-color: #202122;
 }
@@ -47,4 +51,18 @@ button {
 
 ::ng-deep .mat-form-field-outline {
   color: #f3eff5 !important;
+}
+
+::ng-deep .mat-input-element {
+  caret-color: #f3eff5 !important;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  height: 0;
+}
+
+#mat-dialog-0 {
+  padding: 50px;
 }

@@ -84,7 +84,3 @@ mat-sidenav {
   src: local("Roboto"),
     url(../assets/fonts/Roboto-Regular.ttf) format("truetype");
 }
-
-/* KORJATTAVAA / LISTÄTTÄVÄÄ
-- hover -"animaatiot" + muut animaatiot
-*/

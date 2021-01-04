@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
 .phone-nmbr p {
   margin-bottom: 0;
 }

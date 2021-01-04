@@ -12,7 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NavigationbarComponent } from './shared/navigationbar/navigationbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
-import { ContactComponent } from './pages/contact/contact.component';
+import { ContactComponent} from './pages/contact/contact.component';
 import { ServicesComponent } from './pages/services/services.component';
 
 // modules
@@ -25,11 +25,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule  } from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav'
-import {MatIconModule} from '@angular/material/icon'
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatIconModule } from '@angular/material/icon'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DialogComponent } from './pages/dialog/dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -42,7 +46,9 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component';
     ContactComponent,
     ServicesComponent,
     SidenavComponent,
+    DialogComponent
   ],
+  entryComponents: [DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -59,7 +65,9 @@ import { SidenavComponent } from './shared/sidenav/sidenav.component';
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule,
+    MatDialogModule,
   ],
   exports:[
     MatToolbarModule,
